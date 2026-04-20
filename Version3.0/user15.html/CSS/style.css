@@ -28,9 +28,9 @@ body {
 }
 
 ol {
-    list-style-type: upper-roman;
+    list-style-image: url("animals.jpg");
 }
 
 ul {
-    list-style-type: square;
+    list-style-image: url("potato.jpg");
 }
