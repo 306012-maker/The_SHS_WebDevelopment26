@@ -1,0 +1,58 @@
+table {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #46cb4f;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 2px;
+}
+
+tr {
+	border: 3px solid #ffffff;
+	text-align: center;
+	background-color:#07280e; 
+}
+
+th {
+	border: 3px solid #ffffff;
+	text-align: center;
+	color: #ffffff;
+	background-color: #1a9367;
+}
+body {
+	background-image: url("../images/BHG.jpeg");
+}
+/* Container styling */
+.navbar {
+  background-color: #2e47e9;
+  padding: 1px;
+}
+
+.nav-link{
+    font-size: 30%;
+    background-color: #4384e5;
+    border-radius: 4px; 
+}
+/* Remove default list styling and use Flexbox */
+.nav-item {
+    font-size: 12;
+    margin: 1px;
+    padding: 1px;
+    /*display: flex;*/
+    justify-content: center; /* Centers the links */
+}
+
+/* Style the individual links */
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+/* Change color on hover */
+.nav-item a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Dev Assignment</title>
+
+    <style>
+        /* Banner */
+        #banner{
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Smiley Face */
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: yellow;
+            margin-top: 2rem;
+        }
+
+        div#face, div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            top: 25%;
+        }
+
+        #mouth {
+            position: relative;
+            width: 40%;
+            left: 27%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="banner">
+        <h1>Welcome to My Website!</h1>
+        <p>This is the face I drew</p>
+    </div>
+    <div id="face">
+        <div class="left eye">
+            <div class="pupil"></div>
+        </div>
+
+        <div class="right eye">
+            <div class="pupil"></div>
+        </div>
+
+        <div id="mouth"></div>
+    </div>
+    </html>
+

@@ -20,7 +20,63 @@
 
     <style>
 
-    </style>
+    #banner{
+    border: 10px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: yellow;
+    margin-top: 2rem;
+}
+
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 55%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 100%;
+    height: 32%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 100%;
+    left: 5%;
+    height: 22%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
+</style>
 </head>
 
 <body>
@@ -37,29 +93,62 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+             <h1>Text</h1>
+             <h2>Text</h2>
+             <h3>Text</h3>
+             <h4>Text</h4>
+             <h5>Text</h5>
+             <h6>Text</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+             <del>Achilles</del>
+             <ins>Stone Smartt</ins>
+             <sub>VCU</sub>
+             <sup>Jamien Sherwood</sup>
+             <small>Membou</small>
+             <progress value="37" max="100"></progress>
+             <hr>
+             <abbr title="New York Jets">NYJ</abbr>
+
 
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
-        </div>
-        <div id="face">
+            <link rel="navbar-toggler-icon" img src="favicon.ico"
+
+    </div>
+        <div id="face"> 
+            <div class="left eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div class="right eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div id="mouth">
+    </div>
 
         </div>
     </main>
+    <section>
+        <h1>ARVELL REESE</h1>
+        <blockquote>DAVID BAILEY</blockquote>
+    </section>
+
 
 
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[Cooper]</a></center>
         </p>
-
+<ol>
+    <li></li>
+</ol>
     </footer>
 </body>
 
