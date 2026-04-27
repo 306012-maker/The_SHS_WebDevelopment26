@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -132,6 +133,17 @@ title{
   background-color: yellow;
 }
 *{
-    text-align:right;
-    border: 10px solid black;
+    text-align:left;
+    border: 2px solid black;
+}
+#knowledge > * {
+  border: 3px red solid;
+}　p + * {
+  background-color: #FFFF00;
+}
+#knowledge li::marker{
+  content:"😜 ";
+}
+td:hover {
+  background-color: black;
 }
