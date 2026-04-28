@@ -19,3 +19,18 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+body {
+    background-image: url("bmusic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-type: square;
+}

@@ -1,37 +1,138 @@
+@import url(rainbow.css);
+
+/* Child selector */
+#knowledge > * {
+  border: 3px red solid;
+}
+
+/* Adjacent selector */
+p + * {
+  background-color: yellow;
+}
+
+/* Marker pseudo-element */
+#knowledge > ul > li::marker {
+  content: "😜 ";
+}
+
+/* FIXED: Hover ONLY for rainbow table */
+#rainbow td:hover {
+  background-color: black;
+}
+
+/* Buttons */
 .button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-}
-
-.button1 {
-	border-radius: 8px;
-}
-
-.button2 {
-	border-radius: 30%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .red {
-	background-color: #ff0000;
+  background-color: #ff0000;
 }
 
-td{
-	padding:20px;
+/* Table styling */
+td {
+  padding: 20px;
 }
 
-table{
-	margin-left: auto;
-	margin-right: auto;
+table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6{
-	text-align:center;
+/* Headings centered */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+/* Styles */
+.myStyle1 {
+  background-color: purple;
+  border-radius: 50px;
+}
+
+.myStyle2 {
+  background-color: orange;
+  font-size: 22px;
+}
+
+.myStyle3 {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.title {
+  color: red;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+  font-size: 2rem;
+}
+
+.title-small {
+  font-size: .7rem;
+}
+
+.radius-large {
+  border-radius: 40px;
+}
+
+.radius-small {
+  border-radius: 5px;
+}
+
+#hireButtons {
+  background-color: #f0f8ff;
+  border: 3px solid black;
+}
+
+#footerTable {
+  background-color: #222;
+  color: white;
+}
+
+/* Font */
+* {
+  font-family: Arial;
+}
+
+#morecontent {
+  background-color: yellow;
+}
+
+/* Image responsiveness */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Text overflow styling */
+.nameplate {
+  font-size: 2vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* REQUIRED pseudo-classes */
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: purple;
+}
+
+li:hover {
+  background-color: lightblue;
 }

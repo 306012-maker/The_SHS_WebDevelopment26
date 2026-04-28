@@ -4,25 +4,71 @@
         Name:
         Date Completed:
     -->
-
-<head>
-
-    <title>User ## Version 2.0 </title>
-
+    <head>
+        <title>User ## Version 2.0 </title>
     <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="SHS WebDev Tags and DIV's">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="SHS WebDev Tags and DIV's">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner{
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+}
+div#face {
+    width: 2vw;
+    height: 2vw;
+    max-width: 40px;
+    max-height: 40px;
+    margin: 0 auto;
+    position: relative;
+    background: yellow;
+    margin-top: 2rem;
+}
+div#face, div#face * {
+    border-radius: 1000%;
+}
+    .eye {
+    width: 20%;
+    height: 20%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+.left.eye {
+    left: 30%;
+}
+.right.eye {
+    right: 30%;
+}
 
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
-
 <body>
     <main class="wideMargin">
 
@@ -33,34 +79,55 @@
                 This is my first webpage! I was able to code all the HTML and CSS in order to make it.
                 Watch out world of web design here I come!
             </p>
-
             <h2>Heading Examples</h2>
-
-            <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-
+        <h1>About Me</h1>
+        <h2>hello</h2>
+        <h3>hello</h3>
+        <h4>hello</h4>
+        <h5>hello</h5>
+        <h6>hello</h6>
             <h2>Examples of "Other" HTML elements</h2>
-
-            <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
-            <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
+        <p>
+            <del>Did i do this</del>
+        </p>
+        <p>
+            <ins>i think i did</ins>
+        </p>
+        <sub>HELLOOOOO</sub>
+        <sup>HELLOOOO</sup>
+        <small>STOP SAYING HELLO</small>
+        <abbr title="WHOOOO do you think you are?" > WHO </abbr>
+        <progress value="78" max="100" > </progress >
+        <hr>
         </div>
-        <div id="banner">
+        <div id="Hello">
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div class="right eye">
+                <div class="pupil">
+                </div>
+            </div>
+            <div id="mouth">
+            </div>
         </div>
     </main>
-
-
     <footer>
-
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">["Dexter Morgan"]</a></center>
         </p>
-
     </footer>
 </body>
+<h1>SONG</h1>
+<address>
+    <h2>Forever young</h2>
+    <p>I wanna forever young</p>
+</address>
+<div id="banner">
+    <p>Hit the rodeo jack</p>
+</div>
 
 </html>

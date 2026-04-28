@@ -1,5 +1,6 @@
+@import url(rainbow.css);
 .button {
-	background-color: #4CAF50;
+	background-color: #8ee0f9;
 	border: none;
 	color: white;
 	padding: 20px;
@@ -9,29 +10,152 @@
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
+}.button5:hover {
+  background-color: #00a2ff;
+	border-radius: 0px;
 }
-
-.button1 {
-	border-radius: 8px;
+.button5:active {
+  background-color: #1500ff;
+	border-radius: 0px;
 }
-
-.button2 {
-	border-radius: 30%;
+.button:hover {
+  background-color: #00a2ff;
+	border-radius: 0px;
 }
-
-.red {
-	background-color: #ff0000;
+.button:active {
+  background-color: #0051ff;
+	border-radius: 0px;
 }
-
+.button1:hover {
+  background-color: #00a2ff;
+	border-radius: 0px;
+}
+.button1:active {
+  background-color: #0051ff;
+	border-radius: 0px;
+}
+.button2:hover {
+  background-color: #00a2ff;
+	border-radius: 0%;
+}
+.button2:active {
+  background-color: #0051ff;
+	border-radius: 0%;
+}
+.red:hover {
+	background-color: #00a2ff;
+}
+.red:active {
+	background-color: #0051ff;
+}
+.button6:hover {
+  background-color: #ffbd09;
+	border-radius: 0px;
+}
+.button6 {
+  background-color: #ffea02;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button7 {
+  background-color: #ff00b7;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button8 {
+  background-color: #004cff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button6:active {
+  background-color: #ff5500;
+	border-radius: 0px;
+}
+.button7:hover {
+  background-color: #ff0909;
+	border-radius: 0px;
+}
+.button7:active {
+  background-color: #9500ff;
+	border-radius: 0px;
+}
+.button8:hover {
+  background-color: #9f009f;
+	border-radius: 0px;
+}
+.button8:active {
+  background-color: #b300ff;
+	border-radius: 0px;
+}
 td{
 	padding:20px;
 }
-
 table{
 	margin-left: auto;
 	margin-right: auto;
 }
-
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
+}
+.title{
+  color: rgb(0, 255, 51);
+  font-family: 'Trebuchet MS', sans-serif; 
+}
+.title-large {
+  font-size: 2rem;
+}
+.title-small {
+  font-size: .5rem;
+}
+#morecontent {
+  background-color: yellow;
+}
+*{
+    text-align:left;
+    
+}
+.button {
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s; /* Safari */
+}
+
+.button5:hover {
+    background-color: #07c4fd;
+    color: rgb(0, 0, 0);
+}
+#knowledge > * {
+  border: 3px red solid;
+}
+p + * {
+  background-color: #FFFF00;
+}
+#knowledge li::marker{
+  content:"😜 ";
+}
+td:hover {
+  background-color: black;
+}
+.rainbow:autofill {
+  background-color: #ff0000;
 }

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 4.0
-        Name:
-        Date Completed:
+        Name:Bennett Gordon
+        Date Completed:4/24/26
     -->
 
 <head>
@@ -43,6 +43,7 @@
             transition: 0.3s;
             width: 32%;
             margin-bottom: .6em;
+            display: inline-block;
         }
         
         .card:hover {
@@ -51,14 +52,20 @@
         
         .nameplate {
             padding: 2px 16px;
+            font-size: 1vw;
         }
         
-        .paragraph {
+        .paragraph p {
             font-family: Arial, Helvetica, sans-serif;
+            display: inline;
         }
         
         .orange {
             color: orange;
+        }
+        img {
+            width: 100%;
+            vertical-align: top;
         }
     </style>
 </head>
@@ -107,14 +114,14 @@
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
         <div class="paragraph">
             <p>We at HireMe.com have one true belief. We believe in people. Since 1964, we have connected the best people, their talents, skills, career goals, and aspirations with the best companies. We are
-                <p class="orange">"Career Gurus."</p> We are <span class="orange">"People-People."</span> Let us introduce you!
+                <p class="orange" class="paragraph p">"Career Gurus."</p> <p class="paragraph p">We are</p> <span class="orange" class="paragraph p">"People-People."</span> <p class="paragraph p"> Let us introduce you! </p>
             </p>
         </div>
 
         <h2>People</h2>
 
         <div class="card">
-            <img src="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/images/img_avatar.png?raw=true" alt="Avatar John" style="width:100%;">
+            <img src="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/images/img_avatar.png?raw=true" alt="Avatar John">
             <div class="nameplate">
                 <h4><b>John Doe</b></h4>
                 <p>Architect & Engineer</p>
@@ -127,8 +134,8 @@
                 <p>Computer Scientist</p>
             </div>
         </div>
-        <div class="card" style="display: none;">
-            <img src="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/images/img_avatar3.png?raw=true" alt="Avatar Linux" style="width:100%;">
+        <div class="card">
+            <img src="https://github.com/rmainhar/SHS_WebDevelopment/blob/master/Version4.0/user00/images/img_avatar3.png?raw=true" alt="Avatar Linux">
             <div class="nameplate">
                 <h4><b>Sir Linux Penguin</b></h4>
                 <p>Senior Computer Network Architect</p>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+        <style>
+        /* Page color rules */
+        body{
+            color: black;
+            background-color: #ffffff;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        a{
+            color: #0077cc;
+        }
+        /* Position the existing first paragraph in <main> at bottom-left without adding HTML */
+        main > p:first-of-type{
+            position: fixed;
+            left: 1rem;
+            bottom: 1rem;
+            background: rgba(255,255,255,0.95);
+            padding: 0.4rem 0.7rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+            font-size: 0.95rem;
+            z-index: 1000;
+            margin: 0;
+        }
+        #banner{
+            border: 7px groove rgb(129, 190, 255);
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 55px;
+            width: 80vw;
+            margin: 0 auto; 
+            font-size: 3.5rem;
+        }
+        #banner h1{
+            font-size: 3.5rem;
+            margin: 0;
+            color: inherit;
+        }
+        .badge{
+            font-size: 0.5rem;
+            background:#0077cc;
+            color:#fff;
+            padding:0.25rem 0.45rem;
+            border-radius:4px;
+            margin-left:0.5rem;
+            vertical-align:middle;
+        }
+        /* Make the table larger and centered */
+        table{
+            width: 80%;
+            margin: 1.5rem auto;
+            font-size: 1.2rem;
+            border-collapse: collapse;
+        }
+        table, th, td{
+            border: 1px solid #cccccc;
+        }
+        th, td{
+            padding: 0.9rem 1rem;
+            text-align: left;
+        }
+        /* style the in-table heading if present */
+        table h3{
+            display: block;
+            text-align: center;
+            margin: 0.5rem 0 1rem;
+            font-size: 1.5rem;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <div id="banner">
+        <h1>Bears <span class="badge">New</span></h1>
+        </div>
+        <ol>
+            <h2>Why Bears are cool:</h2>
+            <li>They are big.</li>
+            <li>They eat fish.</li>
+            <li>They have thick fur.</li>
+            <li>They are good climbers.</li>
+            <li>They are fast.</li>
+        </ol>
+        <table>
+            <tr>
+                <th>Species</th>
+                <th>Habitat</th>
+                <th>Diet</th>
+            </tr>
+            <tr>
+                <td>Grizzly Bear</td>
+                <td>North America</td>
+                <td>Omnivore</td>
+            </tr>
+            <tr>
+                <td>Polar Bear</td>
+                <td>Arctic</td>
+                <td>Carnivore</td>
+            </tr>
+            <tr>
+                <td>Panda Bear</td>
+                <td>China</td>
+                <td>Herbivore</td>
+            </tr>
+            <tr>
+                <td>Black Bear</td>
+                <td>North America</td>
+                <td>Omnivore</td>
+            </tr>
+        </table>
+        
+
+    <main>
+        <p>Read more: <a href="./webDevUser5.html" target="_blank" rel="noopener">Open webDevUser5.html</a></p>
+    </main>
+
+</body>
+</html>
