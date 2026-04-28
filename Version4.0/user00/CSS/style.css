@@ -1,3 +1,12 @@
+@import url(rainbow.css);
+button:hover {
+	background-color: rgb(158, 17, 144);
+}
+button:active {
+	background-color: rgb(74, 213, 255);
+  	box-shadow: 0 5px #666;
+  	transform: translateY(4px);
+}
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -10,6 +19,14 @@
 	margin: 4px 2px;
 	cursor: pointer;
 }
+.button:hover {
+	background-color: rgb(158, 17, 144);
+}
+.button:active {
+	background-color: rgb(74, 213, 255);
+  	box-shadow: 0 5px #666;
+  	transform: translateY(4px);
+}
 
 .button1 {
 	border-radius: 8px;
@@ -21,7 +38,21 @@
 
 .red {
 	background-color: #ff0000;
+	border-radius: 50%;
 }
+.blue {
+	background-color: #0000ff;
+	border-radius: 5%;
+}
+.green {
+	background-color: #00ff00;
+	border-radius: 25%;
+}
+.yellow {
+	background-color: #ffff00;
+	border-radius: 17%;
+}
+
 
 td{
 	padding:20px;
@@ -34,4 +65,17 @@ table{
 
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
+}
+#knowledge > * {
+  border: 3px red solid;
+}
+p + * {
+  background-color: #FFFF00;
+}
+
+#knowledge li::marker{
+  content:"😜 ";
+}
+#rainbow td:hover {
+  background-color: black;
 }

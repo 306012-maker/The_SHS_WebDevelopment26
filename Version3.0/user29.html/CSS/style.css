@@ -19,3 +19,12 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+ol {
+    color: navy;
+    font-weight: bold;
+}
+
+ul {
+    color: darkgreen;
+    list-style-type: square;
+}

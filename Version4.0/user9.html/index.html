@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 4.0
-        Name:
-        Date Completed:
+        Name:Bennett Gordon
+        Date Completed:4/23/26
     -->
 
 <head>
@@ -16,6 +16,75 @@
     <meta name="description" content="SHS WebDev Version 4.0 - Index">
 
     <!-- CSS -->
+    <style>
+.button_cheese {
+	box-shadow: 4px 4px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:42px;
+	border:3px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Courier New;
+	font-size:17px;
+	padding:16px 32px;
+	text-decoration:none;
+	text-shadow:1px 2px 1px #ffee66;
+}
+.button_cheese:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.button_cheese:active {
+	position:relative;
+	top:1px;
+}
+.button_bun {
+	box-shadow: 4px 3px 0px 1px #fce2c1;
+	background-color:#ffc477;
+	border-radius:15px;
+	border:3px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:22px;
+	font-weight:bold;
+	padding:16px 32px;
+	text-decoration:none;
+	text-shadow:2px 2px 0px #cc9f52;
+}
+.button_bun:hover {
+	background-color:#fb9e25;
+}
+.button_bun:active {
+	position:relative;
+	top:1px;
+}
+.button_patty {
+	box-shadow:inset 4px 3px 0px 1px #a6827e;
+	background-color:#7d5d3b;
+	border-radius:20px;
+	border:4px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:28px;
+	font-weight:bold;
+	padding:16px 24px;
+	text-decoration:none;
+	text-shadow:2px 2px 0px #4d3534;
+}
+.button_patty:hover {
+	background-color:#634b30;
+}
+.button_patty:active {
+	position:relative;
+	top:1px;
+}
+    </style>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
     <!-- Font Awesome -->
@@ -104,20 +173,20 @@
                     <button class="button button2 red">Hire me</button>
                 </td>
                 <td>
-                    <!-- New button 1 here-->
+                    <button class="button_bun">Bun</button>
                 </td>
                 <td>
-                    <!-- New button 2 here-->
+                    <button class="button_cheese">Cheese</button>
                 </td>
                 <td>
-                    <!-- New button 3 here-->
+                    <button class="button_patty">Patty</button>
                 </td>
             </tr>
         </table>
         <div class="pt-3">
             <!-- spacing div-->
 
-            <span class="title">Example of a Heading Title</span>
+            <span class="title title-large">Example of a Heading Title</span>
 
             <div class="content">
 
@@ -140,7 +209,7 @@
 
     <!---------------------------------- Begin the footer ------------->
     <footer>
-        <span class="title">Example of a Footer Title</span>
+        <span class="title title-small">Example of a Footer Title</span>
         <div class="container py-4" id="footerTable">
             <ul class="list-unstyled d-flex justify-content-center">
                 <li class="mx-3">
