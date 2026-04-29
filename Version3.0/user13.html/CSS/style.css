@@ -26,3 +26,10 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+#listformat {
+	background-color: rgb(234, 177, 73);
+	color: #e7edf2;
+	border: 3px inset rgb(239, 192, 24);;
+	text-shadow: 2px 2px 5px rgb(119, 105, 79);
+}
