@@ -1,3 +1,5 @@
+@import url(rainbow.css);
+
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -10,6 +12,46 @@
 	margin: 4px 2px;
 	cursor: pointer;
 }
+
+
+#hireButtons {
+  background-color: lightgray;
+}
+
+#footerTable {
+  background-color: black;
+  color: white;
+}
+
+.title {
+  color: rgb(0, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-large {
+  font-size: 2rem;
+}
+
+.title-small {
+  font-size: 0.5rem;
+}
+
+.blueBtn {
+  background-color: blue;
+  color: white;
+}
+
+.roundBtn {
+	background-color: aqua;
+  border-radius: 20px;
+}
+
+.bigBtn {
+background-color: salmon;
+  font-size: 20px;
+  padding: 15px;
+}
+Apply the classes to your buttons
 
 .button1 {
 	border-radius: 8px;
@@ -34,4 +76,20 @@ table{
 
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
+}
+
+#rainbow td:hover {
+  background-color: black;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+li:hover {
+  transform: scale(1.1);
 }

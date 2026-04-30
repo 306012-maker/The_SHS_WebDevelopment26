@@ -8,6 +8,7 @@
 <head>
     <title>Bootstrap Examples</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Homepage meta data -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,6 +48,10 @@
         .demo-content.bg-alt {
             background: #abb1b8;
         }
+        .table-striped > tbody > tr:nth-of-type(odd) > * {
+           --bs-table-color-type: var(--bs-table-striped-color);
+           --bs-table-bg-type: rgba(92, 102, 241, 0.15)
+            }
     </style>
 
     <body>
@@ -57,7 +62,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+<a href="form.html" class="btn btn-success btn-lg" role="button" aria-pressed="true">Form Page</a>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav me-auto">
                         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
@@ -162,11 +167,29 @@
             <!---------Form Button--------------------------------------------->
             <div class="container mt-3 vstack" name="form-button">
             </div>
+
+            <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+            <i class="fa fa-home"></i> Home
+             </a>
+    <a href="#" class="list-group-item list-group-item-action">
+    <i class="fa fa-camera"></i> Pictures <span class="badge bg-secondary badge-pill badge-primary pull-right active">145</span>
+        </a>
+            <a href="https://www.spotify.com/" target="_blank" class="list-group-item list-group-item-action">
+            <i class="fa fa-music"></i> Music <span class="badge bg-secondary badge-pill badge-primary pull-right active">50</span>
+         </a>
+        <a href="#" class="list-group-item list-group-item-action">
+      <i class="fa fa-film"></i> Videos <span class="badge bg-secondary badge-pill badge-primary pull-right">8</span>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+    <i class="fa-solid fa-headphones"></i> Headphones
+</a>
+</div>
         </main>
 
         <!---------------------------------- Begin the footer ------------------------------------->
-        <footer>
-            <span class="title">Example of a Footer Title</span>
+        <footer class="bg-dark text-white text-center p-3 mt-5">
+            <span class="title d-block mb-2">Example of a Footer Title</span>
             <div class="container py-4" id="footerTable">
                 <ul class="list-unstyled d-flex justify-content-center">
                     <li class="mx-3">
@@ -186,6 +209,7 @@
                     </li>
                 </ul>
             </div>
+            <p class="mb-0"></p>
         </footer>
         <!---------------------------------- End the footer --------------------------------------->
     </body>

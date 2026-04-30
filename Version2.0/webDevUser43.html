@@ -19,7 +19,61 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+#banner{
+    border: 5px outset pink;
+    background-color: lightblue;
+    text-align: center;
+}
+div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: yellow;
+    margin-top: 2rem;
+}
 
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: #000;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: #000;
+}
     </style>
 </head>
 
@@ -37,18 +91,53 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+             <h3> Heading 3</h3>
+             <h4> Heading 4</h4>
+             <h5> Heading 5</h5>
+             <h6> Heading 6</h6>
 
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+             <p>Welcome to my <ins>AWESOME WEBSITE</ins></p>
+             <p>This is <del>wrong info</del> correct info</p>
+             <p>My favorite drink is H<sub>2</sub>O</p>
+             <p>Check out these <sup>NEW</sup> items</p>
+             <p><small>This is small text</small></p>
+             <progress value="60" max="100"></progress>
+             <hr>
+             <p><abbr title="World Health Organization">WHO</abbr> is important</p>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
-        <div id="banner">
+        <div id="banner">>Welcome to my website!</div>
         </div>
+        <section>
+            <h2>My Section</h2>
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                In id cursus mi pretium tellus duis convallis. 
+                Tempus leo eu aenean sed diam urna tempor. 
+                Pulvinar vivamus fringilla lacus nec metus bibendum egestas. 
+                Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+                Ut hendrerit semper vel class aptent taciti sociosqu. 
+                Ad litora torquent per conubia nostra inceptos himenaeos.  
+            </p>
+            </section>
+            
         <div id="face">
+     <div class="left eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div class="right eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div id="mouth">
+    </div>       
 
         </div>
     </main>

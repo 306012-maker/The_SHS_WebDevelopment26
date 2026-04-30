@@ -19,7 +19,66 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner{
+        border: 5px outset red;
+        background-color: lightblue;
+        text-align: center;
+        }
+    div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(255, 238, 0);
+    margin-top: 2rem;
+    }
 
+    div#face, div#face * {
+        border-radius: 50%;
+    }
+
+    .eye {
+        width: 58%;
+        height: 25%;
+        background: #ffffff;
+        position: absolute;
+        top: 20%;
+        }
+
+    .left.eye {
+        left: 20%;
+        }
+
+    .right.eye {
+        right: 20%;
+        }
+
+    .pupil {
+        background: #000;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        left: 25%;
+        transform-origin: bottom;
+    }
+    #nose{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+    }
+    #mouth {
+        position: relative;
+        width: 60%;
+        left: 20%;
+        height: 10%; 
+        border: 1vw solid transparent;
+        border-radius: 50%;
+        top: 50%;
+        border-bottom-color: #000;
+        }
     </style>
 </head>
 
@@ -37,18 +96,44 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1>first headig</h1>
+            <h2></h2>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
+            There one was a man from <del>nantucket</del> Shakopee. He attended
+            <abbr title="Shakopee High School" > SHS </abbr>
+            <h1>Example of Section</h1>
+            <section>
+            <h2>1st Point</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
+</p>
+            </section>
+
+            <section>
+            <h2>2nd Point</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+</p>
+            </section>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
         </div>
         <div id="face">
+            <div class="left eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div class="right eye">
+         <div class="pupil">
+         </div>
+    </div>
+    <div id="mouth">
+    </div>
 
         </div>
     </main>
@@ -57,7 +142,7 @@
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[Ilya]</a></center>
         </p>
 
     </footer>

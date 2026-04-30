@@ -1,37 +1,48 @@
-.button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
+@import url(rainbow.css);
+
+footer {
+    font-size: 12px;
+    text-align: center;
 }
 
-.button1 {
-	border-radius: 8px;
+#rainbow {
+    width: 100%;
 }
 
-.button2 {
-	border-radius: 30%;
+/* Make rainbow blocks big */
+#rainbow td {
+  height: 150px;
 }
 
-.red {
-	background-color: #ff0000;
+/* CHILD SELECTOR */
+#knowledge > * {
+  border: 3px red solid;
 }
 
-td{
-	padding:20px;
+/* ADJACENT SELECTOR */
+p + * {
+  background-color: yellow;
 }
 
-table{
-	margin-left: auto;
-	margin-right: auto;
+/* MARKER */
+#knowledge li::marker {
+  content: "😜 ";
 }
 
-h1, h2, h3, h4, h5, h6{
-	text-align:center;
+/* HOVER */
+#rainbow td:hover {
+  background-color: black;
+}
+
+/* PSEUDO-CLASSES */
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: purple;
+}
+
+li:first-child {
+  font-weight: bold;
 }

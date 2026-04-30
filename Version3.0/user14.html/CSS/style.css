@@ -19,3 +19,14 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+body {
+    background-image: url(spacebackground.jpg);
+    background-size: cover;
+}
+ol {
+    color: blue;
+}
+
+ul {
+    color: green;
+}

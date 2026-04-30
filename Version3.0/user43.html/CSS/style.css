@@ -1,6 +1,15 @@
+body {
+    background-image: url("../images/weeknd.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
 table {
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
+	color: #3571ad;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
@@ -9,13 +18,23 @@ table {
 }
 
 tr {
-	border: 1px solid #ffffff;
+	border: 1px solid #232222;
 	text-align: center;
-	background-color:#9FB6CD; 
+	background-color:#495564; 
 }
 
 th {
 	text-align: center;
 	color: #ffffff;
-	background-color: #003366;
+	background-color: #c693e4;
+	background-size:cover
+}
+body {
+	background-color: #9961b1;
+}
+ol{
+	list-style-type: upper-roman;
+}
+ul {
+  list-style-type: square;
 }

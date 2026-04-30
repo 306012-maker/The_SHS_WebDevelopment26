@@ -1,21 +1,52 @@
-table {
-	font-family: "Marker Felt", "Comic Sans MS", fantasy;
-	color: #003366;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	border-collapse: collapse;
-	border-spacing: 0px;
+/* PAGE BACKGROUND */
+body {
+    background-image: url("../images/hills.jpeg");
+    
+    font-family: Arial;
+    text-align: center;
 }
 
-tr {
-	border: 1px solid #ffffff;
-	text-align: center;
-	background-color:#9FB6CD; 
+/* NAVBAR */
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* TABLE */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
 }
 
 th {
-	text-align: center;
-	color: #ffffff;
-	background-color: #003366;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* LISTS */
+ol {
+    color: darkblue;
+}
+
+ul {
+    color: darkgreen;
 }
