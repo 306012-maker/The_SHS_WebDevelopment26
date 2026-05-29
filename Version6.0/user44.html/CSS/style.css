@@ -3,3 +3,145 @@
     background-color: #0b1b3d !important;
     border-bottom: 4px solid #00d2ff;
 }
+
+
+
+/* Target only elements inside the weather widget for the custom font */
+/* CHANGE #1: Target only elements inside the weather widget for the custom font */
+.weather-outer-container * {
+    font-family: "Rimouski", sans-serif;
+}
+
+/* CHANGE #1: Transformed card to a dark, sleek gaming style with a purple neon glow */
+.weather-outer-container {
+    width: 300px;    
+    background-color: rgba(20, 20, 35, 0.85); /* Semi-transparent dark background */
+    backdrop-filter: blur(5px);               /* Subtle blur effect */
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding-bottom : 30px;
+    border: 1px solid #3d3d65;                 /* Cyberpunk border line */
+    box-shadow: 0 0 15px rgba(111, 66, 193, 0.4); /* Neon purple glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-outer-container:hover {
+    transform: translateY(-5px); /* Smoothly lifts the card up */
+    box-shadow: 0 0 25px rgba(111, 66, 193, 0.8); /* Intensifies the neon glow */
+}
+
+/* CHANGE #1: Header bar styling for the widget */
+.app-title {
+    width: 300px;
+    height: 50px;
+    border-radius: 12px 12px 0 0;
+    background-color: rgba(111, 66, 193, 0.2); /* Translucent purple header tint */
+    border-bottom: 1px solid #3d3d65;
+}
+
+.app-title p {
+    text-align: center;
+    padding: 12px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #0dcaf0; /* Neon info blue text */
+    font-weight: bold;
+    text-uppercase: true;
+}
+
+.notification {
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p {
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* CHANGE #1: Dark inner widget container */
+.weather-container {
+    width: 300px;
+    height: auto; /* Let it scale dynamically with the new content */
+    background-color: transparent;
+}
+
+.weather-icon {
+    width: 300px;
+    height: 110px;
+    padding-top: 15px;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5)); /* Makes weather icons pop on dark bg */
+}
+
+.temperature-value {
+    width: 300px;
+    height: 60px;
+}
+
+/* CHANGE #1: Neon styling for the temp numbers */
+.temperature-value p {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 3.5em;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.temperature-value span {
+    color: #ffc107; /* Neon warning yellow for the degree metric */
+    font-size: 0.5em;
+}
+
+.temperature-description p {
+    padding: 8px;
+    margin: 0;
+    color: #adb5bd; /* Clean gray readable description */
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+/* CHANGE #2: Styling for our brand new humidity block */
+.weather-stats {
+    padding: 5px 0;
+}
+
+.weather-stats p {
+    margin: 0;
+    color: #0dcaf0; /* Cyan matching the navbar details */
+    font-size: 1em;
+    text-align: center;
+}
+
+/* CHANGE #1: Small styled location text */
+.location p {
+    margin: 0;
+    padding-top: 10px;
+    color: #6c757d;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+/* CHANGE #4: Styling for the timestamp text */
+.weather-update {
+    padding-top: 8px;
+}
+
+.weather-update p {
+    margin: 0;
+    color: #6c757d;    /* Muted gray text color */
+    font-size: 0.75em; /* Smaller font so it sits subtly at the bottom */
+    text-align: center;
+    font-style: italic;
+}

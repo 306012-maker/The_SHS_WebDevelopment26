@@ -1,9 +1,7 @@
-// || API KEY || PUT YOUR API KEY HERE!!!!!!!!!
-
+// || API KEY ||
 const key = "3b3d7ee928112590da0656922ffe4c02";
 
-// Since the GeoLocation is not avaliable we can hard code the coordinates
-// Shakopee 44.7974' -93.5273'
+// Hardcoded coordinates for Shakopee
 var latitude = "44.7974";
 var longitude = "-93.5273";
 
@@ -13,6 +11,10 @@ const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
+
+const humidityElement = document.querySelector(".humidity-value");
+const windElement = document.querySelector(".wind-value"); 
+const updateTimeElement = document.querySelector(".update-time");
 
 // App data
 const weather = {};
@@ -39,6 +41,9 @@ function getWeather(){
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
             weather.country = data.sys.country;
+            // CHANGE #2: Save humidity value from API data
+            weather.humidity = data.main.humidity; 
+            weather.windSpeed = data.wind.speed;
         })
         .then(function(){
             displayWeather();
@@ -51,6 +56,16 @@ function displayWeather(){
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    // CHANGE #2: Render humidity to the screen
+    humidityElement.innerHTML = weather.humidity;
+    windElement.innerHTML = weather.windSpeed; 
+
+    // ADDED FOR TIMESTAMP: Create a date object and extract the local time string
+    let currentTime = new Date();
+    let formattedTime = currentTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    
+    // Render the current time into the HTML element
+    updateTimeElement.innerHTML = formattedTime;
 }
 
 // C to F conversion
@@ -58,7 +73,7 @@ function celsiusToFahrenheit(temperature){
     return (temperature * 9/5) + 32;
 }
 
-// WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENET
+// WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENT
 tempElement.addEventListener("click", function(){
     if(weather.temperature.value === undefined) return;
     
