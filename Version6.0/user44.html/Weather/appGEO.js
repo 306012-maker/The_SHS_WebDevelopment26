@@ -76,7 +76,7 @@ function celsiusToFahrenheit(temperature){
     return (temperature * 9/5) + 32;
 }
 
-// WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENET
+
 tempElement.addEventListener("click", function(){
     if(weather.temperature.value === undefined) return;
     

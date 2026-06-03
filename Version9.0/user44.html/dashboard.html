@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Dashboard | PackSmart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🧳 PackSmart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="weather.html">Weather & Packing Planner</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html">Travel Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Trip Budget & Analytics Dashboard</h2>
+        <p class="text-center lead mb-5">Keep track of your adventure expenses and currency conversions all in one clean place.</p>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">💰 Estimation Budget</h3>
+                        
+                        <div class="mb-3 text-start">
+                            <label class="form-label fw-bold">Flight / Transit Cost ($):</label>
+                            <input type="number" id="flightCost" class="form-control rounded-3" value="350" oninput="calculateTotalBudget()">
+                        </div>
+                        
+                        <div class="mb-3 text-start">
+                            <label class="form-label fw-bold">Hotel / Lodging per Night ($):</label>
+                            <input type="number" id="hotelCost" class="form-control rounded-3" value="120" oninput="calculateTotalBudget()">
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label class="form-label fw-bold">Daily Food & Activity Fund ($):</label>
+                            <input type="number" id="foodCost" class="form-control rounded-3" value="75" oninput="calculateTotalBudget()">
+                        </div>
+
+                        <div class="mb-3 text-start">
+                            <label class="form-label fw-bold">Planned Trip Length (Days):</label>
+                            <input type="number" id="budgetDays" class="form-control rounded-3" value="5" oninput="calculateTotalBudget()">
+                        </div>
+
+                        <hr class="my-4">
+                        <div class="p-3 bg-white rounded border text-center shadow-sm">
+                            <p class="lead fw-bold mb-0">Estimated Trip Total:</p>
+                            <h2 class="display-6 fw-bold text-success my-1">$<span id="totalBudgetDisplay">1325</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">💱 Currency Exchange Converter</h3>
+                        <p class="text-muted text-center small">Quick math calculator for spending money conversion estimates.</p>
+                        
+                        <div class="mb-4 text-start">
+                            <label class="form-label fw-bold">Amount in US Dollars (USD $):</label>
+                            <input type="number" id="usdAmount" class="form-control rounded-3" value="100" oninput="convertCurrency()">
+                        </div>
+
+                        <div class="mb-4 text-start">
+                            <label class="form-label fw-bold">Target Destination Currency:</label>
+                            <select id="currencySelect" class="form-select rounded-3 p-2 style-select-box" onchange="convertCurrency()">
+                                <option value="0.92">Euro (EUR €)</option>
+                                <option value="0.79">British Pound (GBP £)</option>
+                                <option value="156.50">Japanese Yen (JPY ¥)</option>
+                                <option value="1.36">Canadian Dollar (CAD $)</option>
+                            </select>
+                        </div>
+
+                        <hr class="my-4">
+                        <div class="p-3 bg-white rounded border text-center shadow-sm">
+                            <p class="lead fw-bold mb-0">Converted Amount Estimate:</p>
+                            <h2 class="display-6 fw-bold text-primary my-1" id="currencyResult">92.00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
