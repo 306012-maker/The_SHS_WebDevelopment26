@@ -19,3 +19,15 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+body {
+background-image: url(pig.png);
+background-size: cover;
+}
+ol {
+	font-family: "Times New Roman";
+	color: red;
+}
+ul {
+	font-family: "Arial";
+	color: blue;
+}

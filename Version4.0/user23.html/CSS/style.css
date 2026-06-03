@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -34,4 +35,62 @@ table{
 
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+li:active::marker {
+  content: "🔥 ";
+}
+
+button:focus {
+  border: 3px solid white;
+}
+
+.button:hover {
+  color: red !important; 
+  background-color: red !important; 
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.title {
+  color: red;
+  font-family: 'Trebuchet MS', sans-serif; 
+}
+
+.title-large {
+  font-size: 2rem;
+}
+.title-small {
+  font-size: .5rem;
+}
+#morecontent {
+  background-color: yellow;
+}
+
+#hireButtons {
+  border: 2px solid red;
+}
+
+* {
+  box-sizing: border-box;
+}
+#knowledge > * {
+  border: 3px red solid;
+}
+p + * {
+  background-color: #FFFF00;
+}
+div li::marker {
+  content: "😜 ";
+}
+#rainbow td:hover {
+  background-color: black;
 }

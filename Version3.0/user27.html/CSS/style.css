@@ -19,3 +19,16 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+	button:hover {
+  color: blue;
+}button:hover {
+  	background-color: blue;
+}
+
+button:active {
+  	transform: scale(0.98);
+}
+
+input:focus {
+  	border-color: green;
+}

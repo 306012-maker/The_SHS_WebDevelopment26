@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name:
-        Date Completed:
+        Name:Grant Swenson
+        Date Completed:4/16/26
     -->
 
 <head>
 
-    <title>Music for Web Dev User ## </title>
+    <title>Food for Web Dev User 52 </title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -23,7 +23,11 @@
     <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Custom -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="CSS/CustomBackground.css">
+
+    <link rel="icon" type="image/x-icon" href="https://pet-health-content-media.chewy.com/wp-content/uploads/2025/09/08205239/black-cats-bombay.jpeg" />
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -33,6 +37,9 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
+        td {
+            color: #FF0000;
+         } 
         footer {
             font-size: 12px;
             text-align: center;
@@ -56,13 +63,13 @@
                         <a href="index.html" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="aboutMe.html" class="nav-link">About Me</a>
+                        <a href="aboutMe.html" class="nav-link active">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="music.html" class="nav-link">Music</a>
+                        <a href="music.html" class="nav-link active">Food</a>
                     </li>
                     <li class="nav-item">
-                        <a href="list.html" class="nav-link">Lists</a>
+                        <a href="list.html" class="nav-link active">Lists</a>
                     </li>
                     <li class="nav-item">
                         <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
@@ -76,52 +83,52 @@
         </div>
     </nav>
     <!---------------------------------- End the nav-bar ------------------------------------->
-
+    
     <main class="container-fluid mt-3">
 
-        <h1 class="text-left my-3" tabindex="0">Music</h1>
+        <h1 class="text-left my-3" tabindex="0">Food</h1>
         <!-- Edit this line for the title of your page -->
 
         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite Songs</h2>
+        <h2>My Top 5 Favorite foods</h2>
         <table id="songs">
             <thead>
                 <tr>
                     <th>Rank</th>
-                    <th>Artist</th>
-                    <th>Song</th>
-                    <th>Album Art</th>
+                    <th>type of food</th>
+                    <th>Food</th>
+                    <th>Pic of food</th>
                 </tr>
             </thead>
             <tr>
                 <td>1</td>
-                <td>Rush</td>
-                <td>Fly By Night</td>
-                <td></td>
+                <td style="color:#00FF00; background-color:sienna;">Pasta</td>
+                <td>Alfrado pasta</td>
+                <td><img src="images/alfredo.webp" width="150" height="100" alt="Picture of pasta alfredo"></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>BNL</td>
-                <td>One Week</td>
-                <td></td>
+                <td>Meats</td>
+                <td>Steak</td>
+                <td><img src="images/steak.jpg" width="150" height="100"></td>
             </tr>
-            <tr>
-                <td>3</td>
-                <td>Dave Matthews Band</td>
-                <td>Grey Street</td>
-                <td></td>
-            </tr>
+            <tr style="background-color:rgb(255, 0, 0);">
+                <td style="color:#10dc10;">3</td>
+                <td style="color:#10dc10;">Sushi</td>
+                <td style="color:#10dc10;">Uramaki</td>
+                <td><img src="https://www.kikkoman.eu/fileadmin/_processed_/8/7/csm_943-recipe-page-fish-finger-roll_desktop_2d992ae4cc.jpg" width="150" height="100" />
+                </tr>
             <tr>
                 <td>4</td>
-                <td>Modest Mouse</td>
-                <td>One Chance</td>
-                <td></td>
+                <td>sandwitches</td>
+                <td>Philly cheesesteak</td>
+                <td><img src="images/Philly.jpg" width="150" height="100"></td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>New Radicals</td>
-                <td>Someday We'll Know</td>
-                <td></td>
+                <td>BBQ</td>
+                <td>pulled pork</td>
+                <td><img src="images/BBQ.jpg" width="150" height="100"></td>
             </tr>
         </table>
     </main>
@@ -131,7 +138,7 @@
     <!---------------------------------- Begin the footer ------------->
     <footer>
         <div>
-            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+            Alfredo recipe can be found here <a href="https://www.allrecipes.com/recipe/23431/to-die-for-fettuccine-alfredo/"> Fav food recipe</a>
         </div>
     </footer>
     <!---------------------------------- End the footer ------------->

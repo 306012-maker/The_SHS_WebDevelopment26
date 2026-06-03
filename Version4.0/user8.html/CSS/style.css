@@ -1,37 +1,74 @@
+
+/* Universal selector */
+* {
+    font-family: Arial, sans-serif;
+}
+/* Base button class */
 .button {
-	background-color: #4CAF50;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
+    background-color: gray;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
 }
 
-.button1 {
-	border-radius: 8px;
+/* Button variations */
+.button-blue {
+    background-color: blue;
 }
 
-.button2 {
-	border-radius: 30%;
+.button-red {
+    background-color: red;
 }
 
-.red {
-	background-color: #ff0000;
+.button-rounded {
+    border-radius: 10px;
 }
 
-td{
-	padding:20px;
+.button-shadow {
+    box-shadow: 3px 3px 6px black;
 }
 
-table{
-	margin-left: auto;
-	margin-right: auto;
+/* Your 3 new custom buttons */
+.button-glow {
+    background-color: purple;
+    box-shadow: 0 0 10px purple;
 }
 
-h1, h2, h3, h4, h5, h6{
-	text-align:center;
+.button-largeRadius {
+    border-radius: 25px;
+}
+
+.button-outline {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+/* Title + subclasses */
+.title {
+    color: red;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.title-large {
+    font-size: 2rem;
+}
+
+.title-small {
+    font-size: 0.7rem;
+}
+
+/* ID selectors */
+#hireButtons {
+    background-color: lightgray;
+    padding: 15px;
+}
+
+#footerTable {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+	width: 100%;
 }

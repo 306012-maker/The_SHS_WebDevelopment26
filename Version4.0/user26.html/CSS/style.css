@@ -1,7 +1,22 @@
+@import url(rainbow.css);
+.title{
+  color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', sans-serif; 
+}
+#morecontent {
+  background-color: rgb(121, 121, 121);
+}
+.title-large {
+  font-size: 2rem;
+}
+
+.title-small {
+  font-size: .5rem;
+}
 .button {
 	background-color: #4CAF50;
 	border: none;
-	color: white;
+	color: rgb(0, 0, 0);
 	padding: 20px;
 	text-align: center;
 	text-decoration: none;
@@ -11,14 +26,44 @@
 	cursor: pointer;
 }
 
-.button1 {
+.button-largeRadius {
 	border-radius: 8px;
 }
 
-.button2 {
+.button-smallRadius {
 	border-radius: 30%;
 }
 
+button.button.fun {
+    background-color: #22c55e !important;
+    border-radius: 10px;
+}
+
+button.button.fun:hover {
+    background-color: #16a34a !important;
+    transform: translateY(-3px) scale(1.05);
+}
+button.button.food {
+    background: linear-gradient(45deg, #f59e0b, #ef4444) !important;
+    border-radius: 30px;
+}
+
+button.button.food:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+button.button.cake {
+    background-color: #fbcfe8 !important;
+    color: #831843 !important;
+    border: 2px solid #f472b6;
+    border-radius: 12px;
+}
+
+button.button.cake:hover {
+    background-color: #f472b6 !important;
+    color: white !important;
+    box-shadow: 0 0 15px rgba(244, 114, 182, 0.7);
+}
 .red {
 	background-color: #ff0000;
 }
@@ -34,4 +79,48 @@ table{
 
 h1, h2, h3, h4, h5, h6{
 	text-align:center;
+}
+#knowledge > * {
+  border: 3px red solid;
+}v
+p + * {
+  background-color: #FFFF00;
+}
+div li::marker{
+  color: red;
+}
+div li::marker{
+  content:"😜 ";
+}
+td:hover {
+  background-color: black;
+}
+
+/* Highlight text on hover */
+p:hover, span:hover {
+  background-color: #FFFF00;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+/* Additional highlight effect on hover with different colors */
+a:hover {
+  background-color: #ff0000;
+  text-decoration: underline;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Magnify effect on click using :active pseudo-class */
+p:active, span:active, a:active, button:active {
+  transform: scale(1.15);
+  transition: transform 0.1s ease;
+}
+
+/* Focus state highlight (for keyboard navigation) */
+a:focus, button:focus {
+  outline: 3px solid #0066cc;
+  outline-offset: 2px;
+  background-color: #616161;
 }
