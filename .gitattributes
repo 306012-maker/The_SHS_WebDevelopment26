@@ -1,7 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-
-# Custom for Visual Studio
+Name: Theo
+Date completed:4/13/2026
 *.cs     diff=csharp
 
 # Standard to msysgit
@@ -11,8 +11,12 @@
 *.DOCX diff=astextplain
 *.dot  diff=astextplain
 *.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
+<<center> my name is theo </center>
+<center>My name is <strong>Mr. M</strong></center>
+<p> 
+<center>Welcome to <em>my website</em></center>
+<p>
+<center><i>made in Web Development</i></center>
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 

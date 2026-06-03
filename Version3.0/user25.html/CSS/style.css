@@ -19,3 +19,13 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+body {
+    background-image: url("../images/song1.jpg");
+}
+ol {
+    color: blue;
+}
+
+ul {
+    color: green;
+}

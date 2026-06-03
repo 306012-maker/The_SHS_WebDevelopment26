@@ -17,7 +17,13 @@
 
 .flipper {
   position: relative;
-  transition: 0.6s;
+  transition: 10s;
+  transform-style: preserve-3d;
+}
+
+.flipperextra {
+  position: relative;
+  transition: 0.1s;
   transform-style: preserve-3d;
 }
 
@@ -25,8 +31,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 320px;
+  width: 15vw;
+  height: 15vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   backface-visibility: hidden;
 }
@@ -44,12 +50,16 @@ img {
 }
 
 .container, .front, .back {
-  width: 250px;
-  height: 320px;
+  width: 15vw;
+  height: 15vw;
 }
 
 .container:hover .flipper {
-  transform: rotateY(180deg);
+  transform: rotateY(150deg);
+}
+
+.container:hover .flipperextra {
+  transform: rotateY(150deg);
 }
 
 a {
@@ -70,7 +80,7 @@ p.caption {
 }
 
 .description {
-  font-size: 0.9em;
+  font-size: 0.8vw;
   padding: 0 20px 20px 20px;
   text-align: left;
 }

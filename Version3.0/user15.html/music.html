@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Version 3.0
-        Name:
-        Date Completed:
+        Name: Dylan
+        Date Completed: 4/20/2026
     -->
 
 <head>
 
+<link rel="icon" type="image/x-icon" href="tab.ico">
+
     <title>Music for Web Dev User ## </title>
+
+<link rel="stylesheet" href="CSS/style.css">
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -37,6 +41,10 @@
             font-size: 12px;
             text-align: center;
         }
+
+         td {
+     color: #FF0000;
+    }
     </style>
 </head>
 
@@ -53,20 +61,20 @@
                 <ul class="navbar-nav me-auto">
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="aboutMe.html" class="nav-link">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="music.html" class="nav-link">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="list.html" class="nav-link">Lists</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
-                    </li>
+    <a href="index.html" class="nav-link">Home</a>
+</li>
+<li class="nav-item">
+    <a href="aboutMe.html" class="nav-link">About Me</a>
+</li>
+<li class="nav-item">
+    <a href="music.html" class="nav-link active">Music</a>
+</li>
+<li class="nav-item">
+    <a href="list.html" class="nav-link">Lists</a>
+</li>
+<li class="nav-item">
+    <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-link disabled" tabindex="-1">Contact</a>
+</li>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your NavBar ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
                 </ul>
                 <form class="d-flex">
@@ -76,6 +84,14 @@
         </div>
     </nav>
     <!---------------------------------- End the nav-bar ------------------------------------->
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+</style>
+
+
 
     <main class="container-fluid mt-3">
 
@@ -93,35 +109,35 @@
                     <th>Album Art</th>
                 </tr>
             </thead>
-            <tr>
+            <tr style="color:black; background-color:gold;" >
                 <td>1</td>
-                <td>Rush</td>
-                <td>Fly By Night</td>
-                <td></td>
+                <td>Bon Jovi</td>
+                <td>Never Say Goodbye</td>
+                <td><img src="bon.jpg" width="75" height="75"></td>
             </tr>
             <tr>
                 <td>2</td>
-                <td>BNL</td>
-                <td>One Week</td>
-                <td></td>
+                <td>Babyface</td>
+                <td>Lovers</td>
+                <td><img src="babyface.jpg" width="75" height="75"></td>
             </tr>
             <tr>
                 <td>3</td>
-                <td>Dave Matthews Band</td>
-                <td>Grey Street</td>
-                <td></td>
+                <td>Babyface</td>
+                <td>Whip Appeal</td>
+                <td><img src="whipappeal.jpg" width="75" height="75"></td>
             </tr>
             <tr>
                 <td>4</td>
-                <td>Modest Mouse</td>
-                <td>One Chance</td>
-                <td></td>
+                <td>Duskydemise</td>
+                <td>Bedrott</td>
+                <td><img src="bedrott.jpg" width="75" height="75"></td>
             </tr>
             <tr>
                 <td>5</td>
-                <td>New Radicals</td>
-                <td>Someday We'll Know</td>
-                <td></td>
+                <td>Duskydemise</td>
+                <td>Rhetorical</td>
+                <td><img src="rhetorical.jpg" width="75" height="75"></td>
             </tr>
         </table>
     </main>

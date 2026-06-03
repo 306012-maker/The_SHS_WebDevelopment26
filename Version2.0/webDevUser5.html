@@ -37,30 +37,108 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1>Something funny</h1>
+            <h2>Something serious</h2>
+            <h3>Something that tastes good</h3>
+            <h4>Something that is not good</h4>
+            <h5>Something that is very bad</h5>
+            <h6>Something that is better</h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+He likes to eat <del>potatoes</del>.
+She hates to go <sub>outside</sub>.
+John is very <strong>strong</strong>.
+Micheal hates to go <sup>swimming</sup>.
+Joeseph is not very <hr>happy</hr>.
+The <abbr title="HyperText Markup Language">HTML</abbr> is the standard markup.
+Jaxon is not very <small>tall</small>.
+<progress value="30" max="100">40%</progress>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
-        </div>
-        <div id="banner">
-        </div>
-        <div id="face">
-
-        </div>
-    </main>
-
-
-    <footer>
-
-        <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
-        </p>
-
-    </footer>
 </body>
+<head>
+    <title>Smiley Face</title>
 
-</html>
+    <style>
+        #banner{
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Smiley Face */
+        div#face {
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: 0 auto;
+            position: relative;
+            background: yellow;
+            margin-top: 2rem;
+        }
+
+        div#face, div#face * {
+            border-radius: 50%;
+        }
+
+        .eye {
+            width: 25%;
+            height: 25%;
+            background: #fff;
+            position: absolute;
+            top: 20%;
+        }
+
+        .left.eye {
+            left: 20%;
+        }
+
+        .right.eye {
+            right: 20%;
+        }
+
+        .pupil {
+            background: #000;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            left: 25%;
+            top: 25%;
+        }
+
+        #mouth {
+            position: relative;
+            width: 40%;
+            left: 27%;
+            height: 25%;
+            border: 1vw solid transparent;
+            border-radius: 50%;
+            top: 50%;
+            border-bottom-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="banner">
+        <h1>Welcome to My Website!</h1>
+        <p>This is the face I drew</p>
+    </div>
+    <div id="face">
+        <div class="left eye">
+            <div class="pupil"></div>
+        </div>
+
+        <div class="right eye">
+            <div class="pupil"></div>
+        </div>
+
+        <div id="mouth"></div>
+</body>
+    </div>
+    </html>

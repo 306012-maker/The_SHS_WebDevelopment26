@@ -1,0 +1,9 @@
+body {
+    margin: 010;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920');
+    background-size: cover;       /* Stretches image to fill the whole page */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Image stays fixed when scrolling */
+}
