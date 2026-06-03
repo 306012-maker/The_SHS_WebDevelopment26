@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Planner | PackSmart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">🧳 PackSmart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="weather.html">Weather & Packing Planner</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Plan Your Destination Weather</h2>
+        
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <input type="text" id="cityInput" class="form-control" placeholder="Enter city name (e.g., Paris, New York)">
+                    <input type="number" id="daysInput" class="form-control" placeholder="Number of days" min="1" value="3" style="max-width: 160px;">
+                    <button class="btn btn-primary" onclick="getWeatherData()">Check Weather & Pack</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center d-none" id="weatherCard">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h3 class="card-title" id="cityName">City Name</h3>
+                        <h4 class="text-muted mb-3" id="temperature">--°F</h4>
+                        <p class="card-text mb-4" id="description">Weather condition</p>
+                        
+                        <hr>
+                        
+                        <div class="row text-start my-4">
+                            <div class="col-md-6">
+                                <h5>Your Custom Packing List:</h5>
+                                <div id="packingList">
+                                    </div>
+                            </div>
+                            <div class="col-md-6 border-start border-md-2 ps-md-4 mt-4 mt-md-0">
+                                <h5>Suitcase Weight Calculator</h5>
+                                <div class="p-3 bg-white rounded border border-light shadow-sm">
+                                    <p class="lead fw-bold mb-1">Total Weight: <span id="weightDisplay">0</span> lbs</p>
+                                    <div class="progress my-2" style="height: 15px;">
+                                        <div id="weightProgress" class="progress-bar bg-success" role="progressbar" style="width: 0%"></div>
+                                    </div>
+                                    <p id="weightWarning" class="small text-muted fw-bold mb-0">Empty Bag</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
